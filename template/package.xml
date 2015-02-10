@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <name>rqt_(>>>APP-NAME<<<)</name>
+  <version>0.0.1</version>
+  <description>rqt_(>>>APP-NAME<<<) provides a GUI plugin</description>
+  <maintainer email="waqar@ualberta.ca">Rumman Waqar</maintainer>
+  
+  <license>BSD</license>
+
+
+  <!-- Url tags are optional, but mutiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/steering_gui</url> -->
+
+  <author email="waqar@ualberta.ca">Rumman Waqar</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <build_depend>rqt_gui</build_depend>
+  <build_depend>rqt_gui_py</build_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>rqt_gui</run_depend>
+  <run_depend>rqt_gui_py</run_depend>
+
+  <export>
+    <rqt_gui plugin="${prefix}/plugin.xml"/>
+  </export>
+</package>
