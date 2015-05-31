@@ -18,7 +18,7 @@ mv ./src/rqt_template ./src/rqt_$@
 # Rename script file
 mv ./scripts/rqt_template ./scripts/rqt_$@
 
-find . -type f -exec sed -i '' "s/(>>>APP-NAME<<<)/$@/g" {} \;
+find . -type f -exec sed -i "s/(>>>APP-NAME<<<)/$@/g" {} \;
 
 popd > /dev/null
 
